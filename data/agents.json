@@ -1,0 +1,175 @@
+[
+  {
+    "id": "agy",
+    "name": "Antigravity",
+    "command": "agy",
+    "taskArgs": [
+      "-p",
+      "{{prompt}}",
+      "--dangerously-skip-permissions"
+    ],
+    "resumeArgs": [
+      "-c",
+      "-p",
+      "{{prompt}}",
+      "--dangerously-skip-permissions"
+    ],
+    "interactiveArgs": [],
+    "modelFlag": "--model",
+    "sessionFlag": "--conversation",
+    "models": [
+      {
+        "id": "claude-opus-5-5-low",
+        "label": "Claude Opus 5.5 (Low)"
+      },
+      {
+        "id": "claude-opus-5-5-medium",
+        "label": "Claude Opus 5.5 (Medium)"
+      },
+      {
+        "id": "claude-opus-5-5-high",
+        "label": "Claude Opus 5.5 (High)"
+      },
+      {
+        "id": "claude-sonnet-5-5-low",
+        "label": "Claude Sonnet 5.5 (Low)"
+      },
+      {
+        "id": "claude-sonnet-5-5-medium",
+        "label": "Claude Sonnet 5.5 (Medium)"
+      },
+      {
+        "id": "claude-sonnet-5-5-high",
+        "label": "Claude Sonnet 5.5 (High)"
+      },
+      {
+        "id": "gemini-4-argon-low",
+        "label": "Gemini 4 Argon (Low)"
+      },
+      {
+        "id": "gemini-4-argon-medium",
+        "label": "Gemini 4 Argon (Medium)"
+      },
+      {
+        "id": "gemini-4-argon-high",
+        "label": "Gemini 4 Argon (High)"
+      },
+      {
+        "id": "gemini-4-hydrogen-low",
+        "label": "Gemini 4 Hydrogen (Low)"
+      },
+      {
+        "id": "gemini-4-hydrogen-medium",
+        "label": "Gemini 4 Hydrogen (Medium)"
+      },
+      {
+        "id": "gemini-4-hydrogen-high",
+        "label": "Gemini 4 Hydrogen (High)"
+      },
+      {
+        "id": "gemini-4-hydrogen-xhigh",
+        "label": "Gemini 4 Hydrogen (XHigh)"
+      },
+      {
+        "id": "gemini-3.8-flash-low",
+        "label": "Gemini 3.8 Flash (Low)"
+      },
+      {
+        "id": "gemini-3.8-flash-medium",
+        "label": "Gemini 3.8 Flash (Medium)"
+      },
+      {
+        "id": "gemini-3.8-flash-high",
+        "label": "Gemini 3.8 Flash (High)"
+      },
+      {
+        "id": "gpt-oss-120b-medium",
+        "label": "GPT-OSS 120B (Medium)"
+      },
+      {
+        "id": "gemini-pro-orchestrator-g1-pro",
+        "label": "Orchestrator (Argon)"
+      }
+    ]
+  },
+  {
+    "id": "claude",
+    "name": "Claude Code",
+    "command": "claude",
+    "taskArgs": [
+      "-p",
+      "{{prompt}}",
+      "--dangerously-skip-permissions"
+    ],
+    "resumeArgs": [
+      "-c",
+      "-p",
+      "{{prompt}}",
+      "--dangerously-skip-permissions"
+    ],
+    "interactiveArgs": [],
+    "modelFlag": "--model",
+    "effortFlag": "--effort",
+    "sessionFlag": "--resume",
+    "models": [
+      {
+        "id": "opus",
+        "label": "Claude Opus"
+      },
+      {
+        "id": "sonnet",
+        "label": "Claude Sonnet"
+      }
+    ],
+    "efforts": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ]
+  },
+  {
+    "id": "codex",
+    "name": "ChatGPT Codex",
+    "command": "codex",
+    "taskArgs": [
+      "exec",
+      "--full-auto",
+      "{{prompt}}"
+    ],
+    "resumeArgs": [
+      "exec",
+      "resume",
+      "--last",
+      "--full-auto",
+      "{{prompt}}"
+    ],
+    "interactiveArgs": [],
+    "modelFlag": "--model",
+    "sessionFlag": "--conversation",
+    "models": [
+      {
+        "id": "gpt-5-codex",
+        "label": "GPT-5 Codex"
+      },
+      {
+        "id": "o3",
+        "label": "OpenAI o3"
+      }
+    ]
+  },
+  {
+    "id": "ollama",
+    "name": "Ollama (Local)",
+    "command": "ollama",
+    "taskArgs": [
+      "{{prompt}}"
+    ],
+    "resumeArgs": [
+      "{{prompt}}"
+    ],
+    "interactiveArgs": [],
+    "modelFlag": "run"
+  }
+]

@@ -1,0 +1,13 @@
+*.exe
+*.exe~
+*.new
+paihub
+ai-workspace
+
+data/config.json
+data/sessions.json
+data/plugins/
+
+.DS_Store
+Thumbs.db
+*.swp
