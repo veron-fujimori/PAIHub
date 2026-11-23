@@ -1,13 +1,12 @@
 # PAIHub
 
-**PAIHub** is a lightweight personal web hub (`Go single binary`) for running your subscription AI coding CLIs (**Antigravity**, **Claude Code**, **ChatGPT Codex**) and local **Ollama** models from any phone or laptop browser over LAN/Tailscale.
+PAIHub lets you use the AI coding tools on your Windows PC from a phone or another computer over your local network or Tailscale. It runs as a single Go binary and supports Antigravity, Claude Code, ChatGPT Codex, and local Ollama models.
 
-## Why Use PAIHub?
+## What you can do
 
-- **Use PC AI CLIs from anywhere:** Send prompts, inspect/edit project files, and run PowerShell commands from your phone or second device without SSH or remote desktop.
-- **Zero idle overhead:** Launches each CLI on demand and exits cleanly after every response (**0 MB AI RAM while idle**), with session resume support.
-- **Workspace & GitHub integration:** Switch local folders via Windows File Explorer, clone GitHub repos, or work directly via `gh` CLI (`GitHub Direct` mode), with optional PIN protection for network access.
-- **Creator Mode (Custom Plugins):** Switch to **Creator Mode** in the workspace picker to let your AI build standalone plugins inside `data/plugins/<id>/plugin.json` and supporting scripts without modifying `paihub.exe` (for example, connecting WhatsApp, Telegram/Discord bots, or custom automation workflows).
+- Send prompts, edit project files, or run PowerShell commands in the browser. The CLI starts on demand and exits after each response. You can resume the session later.
+- Pick a local folder in Windows File Explorer, clone a GitHub repo, or use GitHub Direct to work through `gh`.
+- Open Creator Mode from the workspace picker to build a plugin, such as a Telegram bot. Each plugin has a manifest at `data/plugins/<id>/plugin.json` and can include its own scripts. You can add plugins without rebuilding `paihub.exe`.
 
 ## Quick Start
 
